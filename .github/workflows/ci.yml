@@ -23,6 +23,8 @@ jobs:
         run: npm run test
       - name: Code Coverage
         run: npm run coverage
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
       - name: Build
         run: npm run build
       - name: Release
