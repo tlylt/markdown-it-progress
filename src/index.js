@@ -1,8 +1,8 @@
 'use strict';
 
 function generateProgressBar(arr) {
-  const doneBlock = '█'
-  const emptyBlock = '░'
+  const doneBlock = '\u2588' //'█'
+  const emptyBlock = '\u2591'//'░'
   const reducer = (prev, curr) => prev + '\n' + `${curr[0]} ${doneBlock.repeat(curr[1])}${emptyBlock.repeat(100 - curr[1])} ${curr[1]}%\n`
   return arr.reduce(reducer, "")
 }
