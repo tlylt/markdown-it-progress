@@ -13,7 +13,7 @@ Example Input:
 
 Rendered Output:
 
-![example]('static/example.png')
+![example](static/example.png)
 
 Raw html output:
 ```html
